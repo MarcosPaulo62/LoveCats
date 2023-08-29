@@ -1,0 +1,29 @@
+<section class="content">
+    <p class="title">Entre em contato conosco</p>    
+    <div class="stitle">Faça já sua reserva</div>    
+    
+    <form class="example-form">
+        <mat-form-field class="example-full-width" [color]="colorControl.value!">
+            <label>Nome e sobrenome</label>
+            <input matInput>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" [color]="colorControl.value!">
+            <label>Email</label>
+            <input type="email" matInput placeholder="Digite um email válido" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" [color]="colorControl.value!">
+            <label>Telefone</label>
+            <input type="tel" matInput placeholder="55 5 5555-5555">
+            <mat-icon matSuffix>Fone</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" [color]="colorControl.value!">
+            <label>Mensagem</label>
+            <textarea matInput placeholder="Aqui vai a sua mensagem"></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button color="accent">Enviar</button>
+    </form>
+</section>

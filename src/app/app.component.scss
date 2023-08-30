@@ -1,3 +1,10 @@
+main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .example-icon {
   padding: 0 14px;
 }

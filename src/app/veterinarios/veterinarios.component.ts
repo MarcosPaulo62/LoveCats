@@ -14,7 +14,6 @@ export class VeterinariosComponent {
       .get<any[]>('https://jsonplaceholder.typicode.com/users')
       .subscribe((data) => {
         this.veterinarios = data;
-        console.log(this.veterinarios);
       });
     }
 

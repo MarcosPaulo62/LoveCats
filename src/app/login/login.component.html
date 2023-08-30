@@ -1,1 +1,24 @@
-<p>login works!</p>
+<section class="content">
+    <p class="title">Login</p>    
+    <div class="stitle">Acesse sua área</div>    
+    
+    <form [formGroup]="myForm" (ngSubmit)="submitForm()" class="example-form">
+        <mat-form-field class="example-full-width">
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" matInput placeholder="Digite um email válido">
+            <div class="erro" *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched">
+                Email é obrigatório
+            </div>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" formControlName="senha" matInput placeholder="Digite sua senha">
+            <div class="erro" *ngIf="myForm.get('senha')?.invalid && myForm.get('senha')?.touched">
+                Senha não pode ter menos que 8 caracteres
+            </div>
+        </mat-form-field>
+
+        <button [disabled]="!myForm.valid" type="submit" mat-raised-button color="accent">Entrar</button>
+    </form>
+</section>

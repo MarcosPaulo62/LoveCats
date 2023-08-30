@@ -19,6 +19,8 @@ import { VeterinariosComponent } from './veterinarios/veterinarios.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContatoComponent } from './contato/contato.component';
 import { LoginComponent } from './login/login.component';
+import { ServicosComponent } from './servicos/servicos.component';
+import { AgendamentoComponent } from './agendamento/agendamento.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { LoginComponent } from './login/login.component';
     VeterinariosComponent,
     NotFoundComponent,
     ContatoComponent,
-    LoginComponent
+    LoginComponent,
+    ServicosComponent,
+    AgendamentoComponent
   ],
   imports: [
     BrowserModule,

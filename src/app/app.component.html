@@ -1,24 +1,44 @@
 <mat-toolbar color="accent">
   <mat-toolbar-row>
-    <img src="../assets/Image20230828172117.png" class="img" routerLink="/home">
-    <span>LoveCat - Gateria Hospedagem - </span>
+    <img src="../assets/Image20230828172117.png" class="img" routerLink="/">
+    <span class="title-header" routerLink="/">LoveCat - Gateria Hospedagem - </span>
     <mat-icon
       aria-hidden="false"
       aria-label="Example home icon"
       fontIcon="home"
-      routerLink="/home"
+      routerLink="/"
       class="barra"
     ></mat-icon>
     <span class="example-spacer"></span>
-    <button mat-raised-button color="accent" routerLink="/login">Login</button>
+    <button mat-raised-button color="accent">Login</button>
   </mat-toolbar-row>
 </mat-toolbar>
 <section class="content">
   <nav>
     <button mat-button color="accent" routerLink="/">Home</button>
     <button mat-button color="accent" routerLink="/galeria">Galeria</button>
+    <button mat-button color="accent" routerLink="/servicos">Serviços</button>
     <button mat-button color="accent" routerLink="/veterinarios">Atendimento Veterinários</button>
+    <button mat-button color="accent" routerLink="/agendamento">Agendamento</button>
     <button mat-button color="accent" routerLink="/contato">Contato</button>
-  </nav>
-  <router-outlet></router-outlet>
+  </nav>  
 </section>
+
+<router-outlet></router-outlet>
+
+<mat-toolbar color="accent" class="footer">
+    <div>
+      <span class="title-header"  routerLink="/">LoveCat - Gateria Hospedagem</span>
+    </div>
+    <span>
+      <a href="https://www.linkedin.com/company/dbc-company/" target="_blank">
+        <img src="../assets/instagram.svg" alt="">
+      </a>
+      <a href="https://www.linkedin.com/company/dbc-company/" target="_blank">
+        <img src="../assets/x-twitter.svg" alt="">
+      </a>
+      <a href="https://www.linkedin.com/company/dbc-company/" target="_blank">
+        <img src="../assets/youtube.svg" alt="">
+      </a>    
+    </span>
+</mat-toolbar>

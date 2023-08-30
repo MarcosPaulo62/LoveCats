@@ -1,12 +1,30 @@
 .content{
+    max-width: 1400px;
     width: 80%;
     margin: auto;
 }
 
-.img-container{
-    width: 200px;
+.cats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.img-container img{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .cat-img{
     width: 100%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF4081;
+    padding-top: 2%;
 }

@@ -14,7 +14,7 @@ export class GaleriaComponent {
 
   constructor(http: HttpClient){
     http
-      .get<any[]>('https://api.thecatapi.com/v1/images/search?limit=10')
+      .get<any[]>('https://api.thecatapi.com/v1/images/search?limit=20')
       .subscribe((data) => {
         this.cats = data;
       });
